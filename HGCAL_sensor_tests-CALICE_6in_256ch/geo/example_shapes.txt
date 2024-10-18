@@ -1,0 +1,93 @@
+#
+# THIS IS AN EXAMPLE GEOMETRY FILE
+#
+# Draws all available cell shapes and applies some transformations
+#
+# padNumber	xPosition	yPosition  type    optional
+
+
+-1	+0.00	+6.06	0	SIZE:0.0,TEXT:Available~basic~shapes~for~gemoetry~file
+
+1	-5.50	+5.00	0	SIZE:0.5
+2	-4.50	+5.00	1	SIZE:0.5
+3	-3.50	+5.00	2	SIZE:0.5
+4	-2.50	+5.00	3	SIZE:0.5
+5	-1.50	+5.00	4	SIZE:0.5
+6	-0.50	+5.00	5	SIZE:0.5
+7	+0.50	+5.00	6	SIZE:0.5
+8	+1.50	+5.00	7	SIZE:0.5
+9	+2.50	+5.00	8	SIZE:0.5
+10	+3.50	+5.00	9	SIZE:0.5
+11	+4.50	+5.00	10	SIZE:0.5
+12	+5.50	+5.00	11	SIZE:0.5
+
+13	-5.50	+4.00	12	SIZE:0.5
+14	-4.50	+4.00	13	SIZE:0.5
+15	-3.50	+4.00	14	SIZE:0.5
+16	-2.50	+4.00	15	SIZE:0.5
+17	-1.50	+4.00	16	SIZE:0.5
+18	-0.50	+4.00	17	SIZE:0.5
+19	+0.50	+4.00	18	SIZE:0.5
+20	+1.50	+4.00	19	SIZE:0.5
+21	+2.50	+4.00	20	SIZE:0.5
+22	+3.50	+4.00	21	SIZE:0.5
+23	+4.50	+4.00	22	SIZE:0.5
+24	+5.50	+4.00	23	SIZE:0.5
+
+25	-5.50	+3.00	24	SIZE:0.5
+26	-4.50	+3.00	25	SIZE:0.5
+27	-3.50	+3.00	26	SIZE:0.5
+28	-2.50	+3.00	27	SIZE:0.5
+29	-1.50	+3.00	28	SIZE:0.5
+30	-0.50	+3.00	29	SIZE:0.5
+31	+0.50	+3.00	30	SIZE:0.5
+32	+1.50	+3.00	31	SIZE:0.5
+33	+2.50	+3.00	32	SIZE:0.5
+34	+3.50	+3.00	33	SIZE:0.5
+35	+4.50	+3.00	34	SIZE:0.5
+36	+5.50	+3.00	35	SIZE:0.5
+
+37	-5.50	+2.00	36	SIZE:0.5
+38	-4.50	+2.00	37	SIZE:0.5
+39	-3.50	+2.00	38	SIZE:0.5
+40	-2.50	+2.00	39	SIZE:0.5
+41	-1.50	+2.00	40	SIZE:0.5
+
+-2	+0.00	+0.00	0	SIZE:0.0,TEXT:Available~transformations~for~gemoetry~file~(ordered~execution)
+
+45	-5.50	-1.00	3	SIZE:0.5
+46	-4.50	-1.00	3	SIZE:0.5,INVERT:1,TEXT:Invert
+47	-3.50	-1.00	10	SIZE:0.5
+48	-2.50	-1.00	10	SIZE:0.5,ROTATE:300,TEXT:Rotate
+49	-1.50	-1.00	12	SIZE:0.5
+50	-0.50	-1.00	12	SIZE:0.5,X_STRETCH:2,TEXT:Stretch~x
+51	+0.75	-1.00	12	SIZE:0.5,X_STRETCH:2,BEND:0.7,TEXT:Bend
+52	+1.75	-1.00	12	SIZE:0.5,Y_STRETCH:2,TEXT:Stretch~y
+53	+3.00	-1.00	12	SIZE:0.5,ROTATE:45,X_STRETCH:2,TEXT:#splitline{Rotate}{Stretch~x}
+54	+4.50	-1.00	12	SIZE:0.5,ROTATE:45,X_STRETCH:2,ROTATE:45,TEXT:#splitline{#splitline{Rotate}{Stretch~x}}{Rotate}
+55	-5.50	-2.00	0	SIZE:0.5
+56	-4.50	-2.00	0	SIZE:0.5,CUT:1,TEXT:Cut~corner
+57	-3.50	-2.00	4	SIZE:0.5
+58	-2.50	-2.00	4	SIZE:0.5,CUT:2,TEXT:Cut~corners
+59	-1.50	-2.00	9	SIZE:0.5
+60	-0.50	-2.00	9	SIZE:0.5,CUT:3,TEXT:Cut~spikes
+61	+0.50	-2.00	27	SIZE:0.5
+62	+1.50	-2.00	27	SIZE:0.5,X_CROP:0.4,TEXT:Crop~x
+63	+2.50	-2.00	27	SIZE:0.5,Y_CROP:0.4,TEXT:Crop~y
+64	+3.50	-2.00	27	SIZE:0.5,X_CROP:0.4,Y_CROP:0.4,TEXT:#splitline{Crop~x}{Crop~y}
+65	+4.50	-2.00	27	SIZE:0.5,ROTATE:45,X_CROP:0.4,ROTATE:135,TEXT:#splitline{#splitline{Rotate}{Crop~x}}{Rotate}
+66	-5.50	-3.00	4	SIZE:0.5
+67	-4.50	-3.00	4	SIZE:0.5,WIDTH:0.04,TEXT:#splitline{Change}{width}
+68	-3.50	-3.00	38	SIZE:0.5
+69	-2.50	-3.00	38	SIZE:0.5,WIDTH:0.1,TEXT:#splitline{Change}{width}
+70	-1.50	-3.00	8	SIZE:0.5
+71	-0.50	-3.00	8	SIZE:0.5,WIDTH:0.2,TEXT:#splitline{Change}{width}
+72	+0.50	-3.00	15	SIZE:0.5
+73	+1.50	-3.00	15	SIZE:0.5,X_SHEAR:1,TEXT:Shear
+74	+2.85	-3.00	12	SIZE:0.5,X_STRETCH:4,Y_STRETCH:1.5,TEXT:#splitline{Add~your}{own~text!}
+75	+4.50	-3.00	12	SIZE:0.5,X_STRETCH:4,Y_STRETCH:1.5,TEXT_Y_OFFSET:-0.25,TEXT:#splitline{Move}{text}
+
+#100	+0.00	-5.00	0	SIZE:1,X_STRETCH:2,BEND:1,ROTATE:45
+
+#101	-4.00	-5.00	12	SIZE:1,X_STRETCH:4
+#102	+0.00	-4.00	12	SIZE:1,X_STRETCH:4

@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- Find and Replace all instances of 'Driver Identifer' with the Driver Identifier of your instrument driver 
+
+     Remove this note once this is complete. --><!-- Replace all the instructions that appear within the <font color="red"> tags with information about your instrument driver.  Make sure to delete the <font color="red"> tags as you fill in each line. Remove this note once this is complete.-->
+  <title>Instrument Driver Readme</title>
+</head>
+<body>
+<h2>Keithley 6517 Instrument Driver Readme</h2>
+<para>To rate this instrument driver, go to the driver download page on the <a
+ href="http://www.ni.com/idnet">Instrument Driver Network</a>.</para>
+<h4>1. Overview</h4>
+<para>
+Instrument Driver Technology: LabVIEW Plug and Play (project-style)<br>
+Manufacturer: Keithley
+<br>
+Supported Language(s): LabVIEW
+<br>
+Supported Model(s): 6517B, 6517A, 6514
+<br>
+Model(s) Tested: 6517B, 6514
+<br>
+Interface(s): GPIB,Serial 
+<br>
+Firmware Revision(s) Tested: A12/700x (model 6517B) and A12 REV. A02 (model 6514)<br>
+<br>
+Certified: <font>Yes</font>
+<br>
+NI Supported: <font>Yes</font>
+<br>
+Source Code Available: <font>Yes</font>
+<br>
+<br>
+Driver Revision: <font>2.0.2</font>
+<br>
+Original Release Date: <font>03/07/2016</font>
+<br>
+Current Revision Date: <font>02/10/2017</font>
+</para>
+<h4>2. Required Software</h4>
+<para>Some software components need to be installed before using this instrument driver. The minimum versions of these components are listed below, and can be downloaded from the Download Site.
+<br>
+<br>
+<font>VISA 5.0 or later</font>
+<br>
+<br>
+Refer to the <i>LabVIEW Help</i> for more information about software requirements. You access the <i>LabVIEW Help</i> by selecting <i>Help&raquo;Search the LabVIEW Help</i>.</para>
+<h4>3. Known Issues</h4>
+<para>
+To report issues or provide feedback about this instrument driver,
+please send an email to <a href="mailto:instrument.drivers@ni.com">instrument.drivers@ni.com</a>.</para></font>
+<para></para>
+<br><br>
+(1) The following VIs were not tested due to not having the additional hardware (no scanner card):
+<br><li> Configure Scan.vi;
+<br><li> Control Scan.vi;
+<br><li> Query Closed Channel.vi.
+<br>
+<br>(2) The serial interface was not tested. 
+<br>
+<h4>4. Revision History</h4>
+<para>The latest version of this and other LabVIEW and LabWindows/CVI instrument drivers can be downloaded at the <a href="http://www.ni.com/idnet">Instrument Driver Network</a>.<br>
+<br>
+<font>REV 1.0, 2/19/2016<br></font></para></font>
+<font>Modified by: Hongna Li, Shanghai, China<br></font></font>
+<para><font>Original release.<br>
+<br>
+<font>REV 1.0.1, 3/7/2016<br></font></para></font>
+<font>Modified by: NI<br></font></font>
+Modified:<br>
+Configure Measurement - When Auto Range or Auto Resolution options are selected (Once or On) only those commands are sent to VISA Write. Previously manual resolution and range commands were also being sent along with the Auto commands.<br>
+</font></para></font>
+<br>
+<font>REV 1.0.2, 05/03/2016<br></font></para></font>
+<font>Modified by: Hongna Li<br></font></font>
+Removed:<br>
+Examples:Keithley 6517 Acquire Trace Data.vi<br>
+Added:<br>
+Examples:Keithley 6517 Store and Acquire Trace Data.vi<br>
+Modified:<br>
+Public\Configure:<br>
+Configure System Time Stamp.vi - Removed two unnecessary commands.<br>
+Configure Trace Buffer.vi - Modified the format of buffer elements.<br>
+Private:<br>
+Default Instrument Setup.vi - Added commands for setting data format of readings and time stamp.<br>
+Parse Readings.vi - Modified the parsing method for data format of readings.<br>
+</font></para></font>
+<br>
+<font>REV 2.0.2, 02/10/2017<br></font></para></font>
+<font>Modified by: Alejandro Rodriguez, Lijia Wang<br></font></font>
+Added support for Model 6514.<br>
+Modified VIs: Compatible with 6514, unless otherwise noted in the VI help.<br>
+<br><b>OBSOLETED VIs:</b><br>
+ Read Calculation<br>
+<br>
+<b>NEW VIs:</b> <br>
+<b>Examples:</b><br>
+Keithley 6517 Relative Measurement<br>
+Keithley 6517 Linear Calculation<br>
+Keithley 6517 Trace Buffer Store and Read<br>
+<br>
+<b>Action-status:</b><br>
+Clear IO Port<br>
+Clear Input Trigger <br>
+<br>
+<b>Configure:</b><br>
+Configure IO Port<br>
+Enable Zero Correct<br>
+<br>
+<b>Configure/Calculation:</b><br>
+Configure Relative Calculation <br>
+Configure Composite Limit Test<br>
+Configure CALC2 Input Path <br>
+Configure Linear Calculation<br>
+<br>
+<b>Configure/Measurement:</b><br>
+Configure Digital Filter<br>
+Configure Resistance Leakage Guard<br>
+<br>
+<b>Utility:</b><br>
+Auto Zero Instrument<br>
+<br>
+<b>Data:</b><br>
+Read Calculation Results<br>
+Read Relative Calculation<br>
+Read Trace Buffer Statistics<br>
+<br>
+<b>Data/Low-level:</b><br>
+Wait for Data Ready<br>
+<br>
+<b>Private:</b><br>
+Parse Readings 6514<br>
+Extended User Data<br>
+Read Buffer Statistic<br>
+<br>
+<br>
+<b>MODEL 6514 COMPATIBLE VIs:</b><br>
+<b>Examples:</b><br>
+Keithley 6517 Acquire Limit Test<br>
+Keithley 6517 Acquire Measurement<br>
+Keithley 6517 Perform Zero Correction<br>
+Keithley 6517 Relative Measurement<br>
+Keithley 6517 Linear Calculation<br>
+Keithley 6517 Trace Buffer Store and Read<br>
+<br>
+<b>Action-Status:</b><br>
+Acquire Zero Correct<br>
+Clear Trace Buffer<br>
+Enable Current Damping<br>
+Enable Zero Check<br>
+Save Recall Instrument Setup<br>
+Clear IO Port<br>
+Clear Input Trigger<br>
+<br>
+<b>Configure:</b><br>
+Configure Trace Buffer<br>
+Configure IO Port<br>
+Configure Zero Correct<br>
+<br>
+<b>Configure/Calculation:</b><br>
+Configure CALC1 Math Calculation<br>
+Configure Limit Test<br>
+Configure Percent Deviation Calculation<br>
+Configure Relative Calculation <br>
+Configure Composite Limit Test<br>
+Configure CALC2 Input Path <br>
+Configure Linear Calculation<br>
+<br>
+<b>Configure/Measurement:</b><br>
+Configure Automatic Discharge<Br>
+Configure Charge Measurement Range Group<br>
+Configure Integration<br>
+Configure Measurement Function<br>
+Configure Measurement Limits<br>
+Configure Measurement<br>
+Configure Median Filter<br>
+Configure Subsequent Measurement<br>
+Configure Voltage External Feedback<br>
+Configure Voltage Input Connection<br>
+Configure Digital Filter<br>
+Configure Resistance Leakage Guard<br>
+<br>
+<b>Configure/Trigger:</b><br>
+Configure ARM Layer Trigger Link<br>
+Configure ARM Layer Trigger Source<br>
+Configure Measure Layer Trigger Link<br>
+Configure Measure Layer Trigger Source<br>
+<br>
+<b>Data:</b><br>
+Read Calculation Results<br>
+Read Measurement Data<br>
+Read Relative Calculation<br>
+Read Trace Buffer<br>
+Read Trace Data<br>
+Read Trace Buffer Statistics<Br>
+Read<br>
+<br>
+<b>Data/Low-level:</b><br>
+Initiate<br>
+Wait for Data Ready<br>
+Abort<br>
+<br>
+<b>Utility:</b><br>
+Configure Power-on Defaults<br>
+Preset<br>
+Error Query<br>
+Reset<br>
+Revision Query<br>
+Self-Test<br>
+Auto Zero Instrument<br>
+<br>
+<b>Public:</b><br>
+Initialize<br>
+Close<br>
+VI Tree<br>
+<br>
+<b>Private:</b><br>
+Default Instrument Setup<br>
+Parse Readings 6514<br>
+Extended User Data<br>
+Read Buffer Statistic<br>
+<br>
+<br>
+
+Please refer to documentation of individual VIs for further information on compatibility.<br>
+</body>
+</html>
