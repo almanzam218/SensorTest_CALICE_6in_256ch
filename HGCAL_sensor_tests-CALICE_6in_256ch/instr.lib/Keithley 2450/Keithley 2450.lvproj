@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="15008000">
+<Project Type="Project" LVVersion="20008000">
 	<Property Name="Instrument Driver" Type="Str">True</Property>
+	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str">This project is used by developers to edit API and example files for LabVIEW Plug and Play instrument drivers.</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="CCSymbols" Type="Str">OS,Win;CPU,x86;</Property>
@@ -11,8 +12,9 @@
 			<Item Name="Keithley 2450 Read Multiple.vi" Type="VI" URL="/&lt;instrlib&gt;/Keithley 2450/Examples/Keithley 2450 Read Multiple.vi"/>
 			<Item Name="Keithley 2450 Read Single.vi" Type="VI" URL="/&lt;instrlib&gt;/Keithley 2450/Examples/Keithley 2450 Read Single.vi"/>
 			<Item Name="Keithley 2450 Sweep and Acquire Measurements.vi" Type="VI" URL="/&lt;instrlib&gt;/Keithley 2450/Examples/Keithley 2450 Sweep and Acquire Measurements.vi"/>
-			<Item Name="Keithley 2461 Digitized Sweep.vi" Type="VI" URL="/&lt;instrlib&gt;/Keithley 2450/Examples/Keithley 2461 Digitized Sweep.vi"/>
-			<Item Name="Keithley 2461 Pulse Output List and Aquire.vi" Type="VI" URL="/&lt;instrlib&gt;/Keithley 2450/Examples/Keithley 2461 Pulse Output List and Aquire.vi"/>
+			<Item Name="Keithley 2450 Digitized Sweep.vi" Type="VI" URL="/&lt;instrlib&gt;/Keithley 2450/Examples/Keithley 2450 Digitized Sweep.vi"/>
+			<Item Name="Keithley 2450 Pulse Output List and Aquire.vi" Type="VI" URL="/&lt;instrlib&gt;/Keithley 2450/Examples/Keithley 2450 Pulse Output List and Aquire.vi"/>
+			<Item Name="Keithley 2450.bin3" Type="Document" URL="/&lt;instrlib&gt;/Keithley 2450/Examples/Keithley 2450.bin3"/>
 		</Item>
 		<Item Name="Keithley 2450.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Keithley 2450/Keithley 2450.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
