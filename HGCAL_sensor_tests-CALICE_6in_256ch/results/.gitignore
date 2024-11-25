@@ -1,0 +1,6 @@
+# This file exists simply to have the directory on git by default
+
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
